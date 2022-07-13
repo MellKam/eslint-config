@@ -3,6 +3,11 @@
 	"author": "mellkam",
 	"version": "0.1.1",
 	"main": "./index.js",
+	"repository": {
+		"url": "https://github.com/MellKam/eslint-config"
+	},
+	"homepage": "https://github.com/MellKam/eslint-config",
+	"keywords": ["eslint", "prettier", "config"],
 	"dependencies": {
 		"@typescript-eslint/eslint-plugin": "^5.30.6",
 		"@typescript-eslint/parser": "^5.30.6",
