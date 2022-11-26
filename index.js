@@ -1,5 +1,4 @@
 module.exports = {
-	root: true,
 	env: { node: true, es2021: true },
 	plugins: ['prettier'],
 	ignorePatterns: [
@@ -11,7 +10,6 @@ module.exports = {
 		'.eslintrc.js',
 	],
 	extends: [
-		'eslint:recommended',
 		'prettier',
 		'plugin:@typescript-eslint/eslint-recommended',
 		'plugin:@typescript-eslint/recommended-requiring-type-checking',
@@ -22,18 +20,9 @@ module.exports = {
 		'prettier/prettier': ['warn'],
 		'@typescript-eslint/no-var-requires': 'error',
 		'@typescript-eslint/no-explicit-any': 'off',
-		'no-unused-vars': [
-			'error',
-			{
-				argsIgnorePattern: '^_',
-				varsIgnorePattern: '^_',
-				destructuredArrayIgnorePattern: '^_',
-				caughtErrorsIgnorePattern: '^_',
-				args: 'all',
-				vars: 'all',
-				caughtErrors: 'all',
-			},
-		],
+		'@typescript-eslint/no-floating-promises': 'off',
+		'no-unused-vars': 'off',
+		"@typescript-eslint/no-unused-vars": "warn",
 		'no-console': ['warn', { allow: ['warn', 'error'] }],
 		'prefer-const': [
 			'error',
@@ -43,6 +32,7 @@ module.exports = {
 			},
 		],
 		'no-var': 'error',
-		'object-curly-spacing': ['warn', 'always'],
+		'object-curly-spacing': "off",
+		 "@typescript-eslint/object-curly-spacing": "warn"
 	},
 };
