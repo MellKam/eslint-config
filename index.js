@@ -33,6 +33,6 @@ module.exports = {
 		],
 		'no-var': 'error',
 		'object-curly-spacing': "off",
-		 "@typescript-eslint/object-curly-spacing": "warn"
+		"@typescript-eslint/object-curly-spacing": ["warn", "always"]
 	},
 };
